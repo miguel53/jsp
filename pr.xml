@@ -1,0 +1,2012 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- H237633 - Mejora Tiempo Barras Sistema    [15/02/10] -->
+<!-- H114581 - Procesos Regularizacion Averias [22/10/09] -->
+<!-- H231621 - 1.1.3 Descomposición del proceso lógico Administración de PSs  de Despiece
+-->
+<!-- H266967 - Editar Tiempos Bad -->
+<!-- H278031 - Bade-Winest-II -->
+<!-- H287421 - Informar Canal de Actuacion -->
+<!-- H310378 - Nueva Interfaz Visord -->
+<!-- H337190 - Mejoras Usuabilidad BADE -->
+<!-- H404619 - Mejoras a robustez Odisea -->
+<!-- H5010966 - Admin. Traducción códigos AT a VNF -->
+
+<menus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="menus.xsd">
+	<menu name="inicio">
+		<nombreMostrar i18n="true">inicio</nombreMostrar>
+		<overlib i18n="true">inicioOver</overlib>
+		<url>/servlet/Controler</url>
+		<tipoVentana>_self</tipoVentana>
+	</menu>
+	<menu name="aplicacionreiniciar">
+		<nombreMostrar i18n="true">aplicacionreiniciar</nombreMostrar>
+		<overlib i18n="true">inicioOver</overlib>
+		<url>/servlet/Controler?accion=248</url>
+		<tipoVentana>_self</tipoVentana>
+	</menu>
+	<menu name="actuacionxtelefono" type="submenu">
+		<nombreMostrar i18n="true">actuacionxtelefono</nombreMostrar>
+		<overlib i18n="true">actuacionxtelefonoOver</overlib>
+		<url>/servlet/Controler</url>
+		<tipoVentana>_self</tipoVentana>
+		<menu name="busquedarapidaod">
+			<nombreMostrar i18n="true">busquedarapidaod</nombreMostrar>
+			<overlib i18n="true">busquedarapidaodOver</overlib>
+			<url>/servlet/Controler?accion=203</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="busquedarapidam1">
+			<nombreMostrar i18n="true">busquedarapidam1</nombreMostrar>
+			<overlib i18n="true">busquedarapidam1Over</overlib>
+			<url>/servlet/Controler?accion=262</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		
+		<!-- H310378 - Nueva Interfaz Visord -->
+		
+		<menu name="busquedarapidama">
+			<nombreMostrar i18n="true">busquedarapidama</nombreMostrar>
+			<overlib i18n="true">busquedarapidamaOver</overlib>
+			<url>/servlet/Controler?accion=1018</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		
+		
+		<menu name="busquedarapidapex">
+			<nombreMostrar i18n="true">busquedarapidapex</nombreMostrar>
+			<overlib i18n="true">busquedarapidapexOver</overlib>
+			<url>/servlet/Controler?accion=1094</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		
+		<menu name="centrales" codOperacion="339">
+			<nombreMostrar i18n="true">centrales</nombreMostrar>
+			<overlib i18n="true">centralesOver</overlib>
+			<url>/servlet/ControlerCentrales?accion=835</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="trazados" type="submenu">
+			<nombreMostrar i18n="true">trazados</nombreMostrar>
+			<overlib i18n="true">trazadosOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="consultaplc">
+				<nombreMostrar i18n="true">consultaPlc</nombreMostrar>
+				<overlib i18n="true">consultaPlcOver</overlib>
+				<url>/servlet/Controler?accion=27</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="circuitoatlas">
+				<nombreMostrar i18n="true">circuitoatlas</nombreMostrar>
+				<overlib i18n="true">circuitoatlasOver</overlib>
+				<url>/servlet/Controler?accion=306</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="trazadooba">
+				<nombreMostrar i18n="true">trazadooba</nombreMostrar>
+				<overlib i18n="true">trazadoobaOver</overlib>
+				<url>/servlet/Controler?accion=557</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="trazadofire">
+				<nombreMostrar i18n="true">trazadofire</nombreMostrar>
+				<overlib i18n="true">trazadofireOver</overlib>
+				<url>/servlet/Controler?accion=578</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+		</menu>
+		<menu name="ambar" codOperacion="161">
+			<nombreMostrar i18n="true">consultaAmbar</nombreMostrar>
+			<overlib i18n="true">consultaAmbar</overlib>
+			<url>/servlet/Controler?accion=440</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="plantainstalada" codOperacion="223">
+			<nombreMostrar i18n="true">plantainstalada</nombreMostrar>
+			<overlib i18n="true">plantainstaladaOver</overlib>
+			<url>/servlet/Controler?accion=553</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="buscatecnicos" codOperacion="292">
+			<nombreMostrar i18n="true">buscatecnicos</nombreMostrar>
+			<overlib i18n="true">buscatecnicosOver</overlib>
+			<url>/servlet/Controler?accion=33&amp;origen=buscatecnicos&amp;grtr=yes</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+	</menu>
+	<menu name="graficas" type="submenu">
+		<nombreMostrar i18n="true">graficas</nombreMostrar>
+		<overlib i18n="true">graficasOver</overlib>
+		<url>/servlet/Controler</url>
+		<tipoVentana>_self</tipoVentana>
+		<menu name="graficos" codOperacion="47">
+			<nombreMostrar i18n="true">graficos</nombreMostrar>
+			<overlib i18n="true">grafOver</overlib>
+			<url>/servlet/Controler?accion=32&amp;consulta=graf</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="graficohoja" codOperacion="48">
+			<nombreMostrar i18n="true">hojas</nombreMostrar>
+			<overlib i18n="true">hojasOver</overlib>
+			<url>/servlet/Controler?accion=32&amp;consulta=hoja</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="gruposfavoritosgraf" codOperacion="260">
+			<nombreMostrar i18n="true">graficosGrupos</nombreMostrar>
+			<overlib i18n="true">graficosGruposOver</overlib>
+			<url>/servlet/ControlerFavoritos?accion=653&amp;modo=653</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="grupossupervision" codOperacion="294">
+			<nombreMostrar i18n="true">gruposSupervision</nombreMostrar>
+			<overlib i18n="true">gruposSupervisionOver</overlib>
+			<url>/servlet/ControlerDistribucion?accion=99&amp;orig=man</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="despachotecnico" type="submenu">
+			<nombreMostrar i18n="true">miactividad</nombreMostrar>
+			<overlib i18n="true">miactividadOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="micartera" codOperacion="220">
+				<nombreMostrar i18n="true">micartera</nombreMostrar>
+				<overlib i18n="true">micarteraOver</overlib>
+				<url>/servlet/Controler?accion=545</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="despachogrupo" codOperacion="245">
+				<nombreMostrar i18n="true">actividadGrupo</nombreMostrar>
+				<overlib i18n="true">actividadGrupoOver</overlib>
+				<url>/servlet/ControlerFavoritos?accion=671</url>
+				<tipoVentana>_blank</tipoVentana>
+				<menuVentana>false</menuVentana>
+				<statusVentana>false</statusVentana>
+				<resizableVentana>true</resizableVentana>
+			</menu>
+		</menu>
+		<menu name="grupoturnos" type="submenu">
+			<nombreMostrar i18n="true">Turnos</nombreMostrar>
+			<overlib i18n="true">TurnosOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="asigcerrarindisp" codOperacion="183">
+				<nombreMostrar i18n="true">asignaIndisponibilidad</nombreMostrar>
+				<overlib i18n="true">asignaIndisponibilidadOver</overlib>
+				<url>/servlet/Controler?accion=33&amp;origen=listarIndisposicion&amp;orig=indisp&amp;grtr=yes&amp;soloTecnicos=yes</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="asigcerraramb" codOperacion="283">
+				<nombreMostrar i18n="true">asignaAMB</nombreMostrar>
+				<overlib i18n="true">asignaAMBOver</overlib>
+				<url>/servlet/Controler?accion=33&amp;tipoBase=amb&amp;origen=listarAMB&amp;orig=indisp&amp;grtr=yes&amp;soloTecnicos=yes</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="turnosconsultar" codOperacion="256">
+				<nombreMostrar i18n="true">consultaDisponibilidad</nombreMostrar>
+				<overlib i18n="true">consultaDisponibilidadOver</overlib>
+				<url>/servlet/ControlerTecnicos?accion=628&amp;origen=consultarDisposicion</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="regularizardomicilio" codOperacion="255">
+			<nombreMostrar i18n="true">regularizardomicilio</nombreMostrar>
+			<overlib i18n="true">regularizardomicilioOver</overlib>
+			<url>/servlet/ControlerRegularizacion?accion=632</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="grupodespacho" type="submenu">
+			<nombreMostrar i18n="true">despacho</nombreMostrar>
+			<overlib i18n="true">despachoOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="despacho" codOperacion="217">
+				<nombreMostrar i18n="true">despacho</nombreMostrar>
+				<overlib i18n="true">despachoConfOver</overlib>
+				<url>/servlet/ControlerDespacho?accion=493</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="buscatecnicos" codOperacion="292">
+				<nombreMostrar i18n="true">buscatecnicos</nombreMostrar>
+				<overlib i18n="true">buscatecnicosOver</overlib>
+				<url>/servlet/Controler?accion=33&amp;origen=buscatecnicos&amp;grtr=yes</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="mapalarmas" codOperacion="47">
+			<nombreMostrar i18n="true">mapalarmas</nombreMostrar>
+			<overlib i18n="true">mapalarmasOver</overlib>
+			<url>/servlet/ControlerAlarmas?accion=781</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+	</menu>
+	<menu name="informes" type="submenu">
+		<nombreMostrar i18n="true">informe</nombreMostrar>
+		<overlib i18n="true">informeOver</overlib>
+		<url>/servlet/Controler</url>
+		<tipoVentana>_self</tipoVentana>
+		<menu name="informeactividad" codOperacion="29">
+			<nombreMostrar i18n="true">informeactividad</nombreMostrar>
+			<overlib i18n="true">informeactividadOver</overlib>
+			<url>/servlet/ControlerInformes?accion=453&amp;tipoFiltro=1</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="mapasindistri" codOperacion="280">
+			<nombreMostrar i18n="true">mapasindistri</nombreMostrar>
+			<overlib i18n="true">mapasindistriOver</overlib>
+			<url>/servlet/ControlerInformes?accion=700&amp;origen=mapalarmas&amp;tipoFiltro=2</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="actividadpendiente" codOperacion="291">
+			<nombreMostrar i18n="true">actividadpendiente</nombreMostrar>
+			<overlib i18n="true">actividadpendienteOver</overlib>
+			<url>/servlet/ControlerInformes?accion=700&amp;origen=actividadpendiente&amp;tipoFiltro=3</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="informedisp" codOperacion="336">
+			<nombreMostrar i18n="true">informedisp</nombreMostrar>
+			<overlib i18n="true">informedispOver</overlib>
+			<url>/servlet/ControlerInformes?accion=709&amp;tipoFiltro=4</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="informetramos" codOperacion="363">
+			<nombreMostrar i18n="true">informetramos</nombreMostrar>
+			<overlib i18n="true">informetramosOver</overlib>
+			<url>/servlet/ControlerInformes?accion=900&amp;origen=informetramos&amp;tipoFiltro=9</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="informedispersion" codOperacion="364">
+			<nombreMostrar i18n="true">informedispersion</nombreMostrar>
+			<overlib i18n="true">informedispersionOver</overlib>
+			<url>/servlet/ControlerInformes?accion=902&amp;origen=informedispersion&amp;tipoFiltro=10</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="informeresumen" codOperacion="365">
+			<nombreMostrar i18n="true">informeresumen</nombreMostrar>
+			<overlib i18n="true">informeresumenOver</overlib>
+			<url>/servlet/ControlerInformes?accion=901&amp;origen=informeresumen&amp;tipoFiltro=11</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="informeestadillo" codOperacion="325">
+			<nombreMostrar i18n="true">estadillos</nombreMostrar>
+			<overlib i18n="true">estadillosOver</overlib>
+			<url>/servlet/ControlerInformes?accion=808&amp;tipoFiltro=6</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="cuadromando" codOperacion="328">
+			<nombreMostrar i18n="true">cuadroMandos</nombreMostrar>
+			<overlib i18n="true">cuadroMandosOver</overlib>
+			<url>/servlet/ControlerInformes?accion=814&amp;tipoFiltro=7</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		
+		<!-- H278031 -->	
+		<menu name="informeBadWinest" codOperacion="329">
+			<nombreMostrar i18n="true">informeBadWinest</nombreMostrar>
+			<overlib i18n="true">informeBadWinestOver</overlib>
+			<url>/servlet/ControlerInformes?accion=1007</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<!-- fin H278031 -->
+		
+		<!-- H297820 -->	
+		<menu name="informeBadProvision" codOperacion="423">
+			<nombreMostrar i18n="true">informeBadProvision</nombreMostrar>
+			<overlib i18n="true">informeBadProvisionOver</overlib>
+			<url>/servlet/ControlerInformes?accion=1056</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<!-- fin H297820 -->	
+		
+		<!-- Inicio H374018 -->	
+		<menu name="informefranqueomasivo" codOperacion="433">
+			<nombreMostrar i18n="true">informefranqueomasivo</nombreMostrar>
+			<overlib i18n="true">informeactividadOver</overlib>
+			<url>/servlet/ControlerInformes?accion=1101</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<!-- Fin H374018 -->	
+	</menu>
+	<menu name="miusuario" type="submenu">
+		<nombreMostrar i18n="true">misDatos</nombreMostrar>
+		<overlib i18n="true">misDatosOver</overlib>
+		<url>/servlet/Controler</url>
+		<tipoVentana>_self</tipoVentana>
+		<menu name="dispositivo" type="submenu">
+			<nombreMostrar i18n="true">dispositivo</nombreMostrar>
+			<overlib i18n="true">dispOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="verdispositivo">
+				<nombreMostrar i18n="true">verdispositivo</nombreMostrar>
+				<overlib i18n="true">verdispOver</overlib>
+				<url>/servlet/Controler?accion=2</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="modovisual">
+				<nombreMostrar i18n="true">modovisual</nombreMostrar>
+				<overlib i18n="true">modovisualOver</overlib>
+				<url>/servlet/Controler?accion=602</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="testperifericos">
+				<nombreMostrar i18n="true">testperifericos</nombreMostrar>
+				<overlib i18n="true">testperifericosOver</overlib>
+				<url>/servlet/Controler?accion=1079</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+		</menu>
+		<menu name="misesion" codOperacion="153">
+			<nombreMostrar i18n="true">misesion</nombreMostrar>
+			<overlib i18n="true">misesionOver</overlib>
+			<url>/servlet/ControlerSesiones?accion=421</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="idioma" codOperacion="76">
+			<nombreMostrar i18n="true">lengua_corto</nombreMostrar>
+			<overlib i18n="true">idiomaOver</overlib>
+			<url>/servlet/Controler?accion=21</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="usuarioautoeditar" codOperacion="244">
+			<nombreMostrar i18n="true">autoeditaUsuario</nombreMostrar>
+			<overlib i18n="true">autoeditaUsuarioOver</overlib>
+			<url>/servlet/Controler?accion=619&amp;modo=36&amp;submodo=619</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="propiedades" codOperacion="244">
+			<nombreMostrar i18n="true">propiedadesUsuario</nombreMostrar>
+			<overlib i18n="true">propiedadesUsuarioOver</overlib>
+			<url>/servlet/Controler?accion=724</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>PC</invisible>
+		</menu>
+		<menu name="mifichausuario">
+			<nombreMostrar i18n="true">mifichausuario</nombreMostrar>
+			<overlib i18n="true">mifichausuarioOver</overlib>
+			<url>/servlet/EjecutorPdf?accion=657&amp;origen=fichausuario&amp;tipo=miusuario</url>
+			<tipoVentana>_blank</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="misindisponibilidades" type="submenu">
+			<nombreMostrar i18n="true">indisponibilidad</nombreMostrar>
+			<overlib i18n="true">indisponibilidadOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="autoasignarindisp" codOperacion="253">
+				<nombreMostrar i18n="true">autoasignarIndisp</nombreMostrar>
+				<overlib i18n="true">autoasignarIndispOver</overlib>
+				<url>/servlet/ControlerTecnicos?accion=366</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="autocerrarindisp" codOperacion="254">
+				<nombreMostrar i18n="true">autocerrarIndisp</nombreMostrar>
+				<overlib i18n="true">autocerrarIndispOver</overlib>
+				<url>/servlet/ControlerTecnicos?accion=464&amp;origen=cerrarIndisposicion</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="indisponibilidadeslistado" codOperacion="183">
+				<nombreMostrar i18n="true">indisponibilidadesListado</nombreMostrar>
+				<overlib i18n="true">indisponibilidadesListadoOver</overlib>
+				<url>/servlet/ControlerTecnicos?accion=624&amp;origen=consultarIndisponibilidad</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+		</menu>
+		<menu name="misambs" type="submenu">
+			<nombreMostrar i18n="true">amb</nombreMostrar>
+			<overlib i18n="true">ambOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="autoasignaramb" codOperacion="284">
+				<nombreMostrar i18n="true">autoasignarAMB</nombreMostrar>
+				<overlib i18n="true">autoasignarAMBOver</overlib>
+				<url>/servlet/ControlerTecnicos?accion=366&amp;tipoBase=amb</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="autocerraramb" codOperacion="285">
+				<nombreMostrar i18n="true">autocerrarAMB</nombreMostrar>
+				<overlib i18n="true">autocerrarAMBOver</overlib>
+				<url>/servlet/ControlerTecnicos?accion=464&amp;tipoBase=amb&amp;origen=cerrarAMB</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="ambslistado" codOperacion="283">
+				<nombreMostrar i18n="true">AMBsListado</nombreMostrar>
+				<overlib i18n="true">AMBsListadoOver</overlib>
+				<url>/servlet/ControlerTecnicos?accion=624&amp;tipoBase=amb&amp;origen=consultarAMB</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+		</menu>
+		<menu name="misturnos" codOperacion="257">
+			<nombreMostrar i18n="true">miDisponibilidad</nombreMostrar>
+			<overlib i18n="true">miDisponibilidadOver</overlib>
+			<url>/servlet/ControlerTecnicos?accion=628&amp;origen=misdispo</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="gruposfavoritosautoasociar" codOperacion="261">
+			<nombreMostrar i18n="true">gruposFavoritos</nombreMostrar>
+			<overlib i18n="true">gruposFavoritosOver</overlib>
+			<url>/servlet/ControlerDistribucion?accion=99&amp;orig=fav&amp;tipoAsociar=mis</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="sectoresfavoritosautoasociar" codOperacion="267">
+			<nombreMostrar i18n="true">sectoresFavoritos</nombreMostrar>
+			<overlib i18n="true">sectoresFavoritosOver</overlib>
+			<url>/servlet/ControlerSectores?accion=191&amp;orig=fav&amp;tipoAsociar=mis</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="agenda" codOperacion="243">
+			<nombreMostrar i18n="true">agenda</nombreMostrar>
+			<overlib i18n="true">agendaOver</overlib>
+			<url>/servlet/Controler?accion=576</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+	</menu>
+	<menu name="mensajes" type="submenu">
+		<nombreMostrar i18n="true">mensajes</nombreMostrar>
+		<overlib i18n="true">mensajesOver</overlib>
+		<url>/servlet/Controler</url>
+		<tipoVentana>_self</tipoVentana>
+		<menu name="sms" codOperacion="124">
+			<nombreMostrar i18n="true">sms</nombreMostrar>
+			<overlib i18n="true">smsOver</overlib>
+			<url>/servlet/Controler?accion=5</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="avisosmsenviar" type="submenu">
+			<nombreMostrar i18n="true">avisosenviar</nombreMostrar>
+			<overlib i18n="true">avisosenviarOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="avisoenviar" codOperacion="49">
+				<nombreMostrar i18n="true">avisos</nombreMostrar>
+				<overlib i18n="true">avisosOver</overlib>
+				<url>/servlet/ControlerAvisos?accion=19&amp;tipo=aviso&amp;confirmado=true&amp;origen=avisos</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="smsenviar" codOperacion="344">
+				<nombreMostrar i18n="true">sms</nombreMostrar>
+				<overlib i18n="true">smsOver</overlib>
+				<url>/servlet/ControlerAvisos?accion=19&amp;tipo=sms&amp;confirmado=true&amp;origen=sms</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+		</menu>
+		<menu name="avisosenviartodos" codOperacion="152">
+			<nombreMostrar i18n="true">avisosenviartodos</nombreMostrar>
+			<overlib i18n="true">avisosenviartodos</overlib>
+			<url>/servlet/ControlerAvisos?accion=19&amp;confirmado=true&amp;tipo=aviso&amp;destinatario=TODOS</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="avisosleer" type="submenu">
+			<nombreMostrar i18n="true">avisosleer</nombreMostrar>
+			<overlib i18n="true">avisosleerOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="avisosrecibidos" codOperacion="50">
+				<nombreMostrar i18n="true">avisosrecibidos</nombreMostrar>
+				<overlib i18n="true">avisosrecibidosOver</overlib>
+				<url>/servlet/ControlerAvisos?accion=17</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="avisosenviados" codOperacion="51">
+				<nombreMostrar i18n="true">avisosenviados</nombreMostrar>
+				<overlib i18n="true">avisosenviadosOver</overlib>
+				<url>/servlet/ControlerAvisos?accion=44</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="avisostodos" codOperacion="52">
+				<nombreMostrar i18n="true">avisostodos</nombreMostrar>
+				<overlib i18n="true">avisostodosOver</overlib>
+				<url>/servlet/ControlerAvisos?accion=45</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+		</menu>
+		<menu name="email">
+			<nombreMostrar i18n="true">emailenviar</nombreMostrar>
+			<overlib i18n="true">emailenviarOver</overlib>
+			<url>/servlet/ControlerAvisos?accion=547</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+	</menu>
+	<menu name="configurar" type="submenu">
+		<nombreMostrar i18n="true">configurar</nombreMostrar>
+		<overlib i18n="true">configurarOver</overlib>
+		<url>/servlet/Controler</url>
+		<tipoVentana>_self</tipoVentana>
+		<menu name="graficamodificar" type="submenu">
+			<nombreMostrar i18n="true">confGraficos</nombreMostrar>
+			<overlib i18n="true">confGraficosOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+			<menu name="graficohojamodificar" type="submenu">
+				<nombreMostrar i18n="true">hojasConf</nombreMostrar>
+				<overlib i18n="true">hojasConfOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<menu name="graficohojaeditar" type="submenu">
+					<nombreMostrar i18n="true">editarHojasConf</nombreMostrar>
+					<overlib i18n="true">editarHojasConfOver</overlib>
+					<url>/servlet/Controler</url>
+					<tipoVentana>_self</tipoVentana>
+					<menu name="graficohojausuario" codOperacion="144">
+						<nombreMostrar i18n="true">todasHojas</nombreMostrar>
+						<overlib i18n="true">allHojasOver</overlib>
+						<url>/servlet/ControlerConfiguracionGraficos?accion=415&amp;&amp;tipoEditar=todos</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+					<menu name="mishojas" codOperacion="145">
+						<nombreMostrar i18n="true">misHojas</nombreMostrar>
+						<overlib i18n="true">misHojasOver</overlib>
+						<url>/servlet/ControlerConfiguracionGraficos?accion=415&amp;tipoEditar=mis</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+				</menu>
+				<menu name="graficohojaanadir" codOperacion="63">
+					<nombreMostrar i18n="true">crearHojasConf</nombreMostrar>
+					<overlib i18n="true">crearHojasConfOver</overlib>
+					<url>/servlet/ControlerConfiguracionGraficos?accion=268&amp;modo=48</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="hojaasociar" type="submenu">
+					<nombreMostrar i18n="true">asociarHojasConf</nombreMostrar>
+					<overlib i18n="true">asociarHojasConfOver</overlib>
+					<url>/servlet/Controler</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+					<menu name="hojaasociartodas" codOperacion="252">
+						<nombreMostrar i18n="true">todasHojas</nombreMostrar>
+						<overlib i18n="true">allHojasOver</overlib>
+						<url>/servlet/Controler?accion=33&amp;origen=hojas&amp;tipoAsociar=todos</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+					<menu name="hojaasociarmias" codOperacion="179">
+						<nombreMostrar i18n="true">misHojas</nombreMostrar>
+						<overlib i18n="true">misHojasOver</overlib>
+						<url>/servlet/Controler?accion=33&amp;origen=hojas&amp;tipoAsociar=mis</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+				</menu>
+			</menu>
+			<menu name="graficomodificar" type="submenu">
+				<nombreMostrar i18n="true">graficosConf</nombreMostrar>
+				<overlib i18n="true">graficosConfOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<menu name="graficoeditar" type="submenu">
+					<nombreMostrar i18n="true">editarGraficosConf</nombreMostrar>
+					<overlib i18n="true">editarGraficosConfOver</overlib>
+					<url>/servlet/Controler</url>
+					<tipoVentana>_self</tipoVentana>
+					<menu name="graficousuario" codOperacion="146">
+						<nombreMostrar i18n="true">todosGraficos</nombreMostrar>
+						<overlib i18n="true">allGraficosOver</overlib>
+						<url>/servlet/ControlerConfiguracionGraficos?accion=414&amp;tipoEditar=todos</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+					<menu name="misgraficos" codOperacion="147">
+						<nombreMostrar i18n="true">misGraficos</nombreMostrar>
+						<overlib i18n="true">misGraficosOver</overlib>
+						<url>/servlet/ControlerConfiguracionGraficos?accion=414&amp;tipoEditar=mis</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+				</menu>
+				<menu name="graficoanadir" codOperacion="66">
+					<nombreMostrar i18n="true">crearGraficosConf</nombreMostrar>
+					<overlib i18n="true">crearGraficosConfOver</overlib>
+					<url>/servlet/ControlerConfiguracionGraficos?accion=265&amp;modo=49</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="graficoasociar" type="submenu">
+					<nombreMostrar i18n="true">asociarGraficosConf</nombreMostrar>
+					<overlib i18n="true">asociarGraficosConfOver</overlib>
+					<url>/servlet/Controler</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+					<menu name="graficoasociartodos" codOperacion="251">
+						<nombreMostrar i18n="true">todosGraficos</nombreMostrar>
+						<overlib i18n="true">allGraficosOver</overlib>
+						<url>/servlet/Controler?accion=33&amp;origen=graficos&amp;tipoAsociar=todos</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+					<menu name="graficoasociarmios" codOperacion="181">
+						<nombreMostrar i18n="true">misGraficos</nombreMostrar>
+						<overlib i18n="true">misGraficosOver</overlib>
+						<url>/servlet/Controler?accion=33&amp;origen=graficos&amp;tipoAsociar=mis</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+				</menu>
+			</menu>
+			<menu name="barramodificar" type="submenu">
+				<nombreMostrar i18n="true">barraConf</nombreMostrar>
+				<overlib i18n="true">barraConfOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<menu name="barraeditar" type="submenu">
+					<nombreMostrar i18n="true">editaBarra</nombreMostrar>
+					<overlib i18n="true">editaBarraOver</overlib>
+					<url>/servlet/Controler</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+					<menu name="barraeditarmias" codOperacion="68">
+						<nombreMostrar i18n="true">misBarras</nombreMostrar>
+						<overlib i18n="true">editaBarraOver</overlib>
+						<url>/servlet/ControlerConfiguracionGraficos?accion=70&amp;tipoEditar=mis</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+					<menu name="barraeditartodas" codOperacion="248">
+						<nombreMostrar i18n="true">todasBarras</nombreMostrar>
+						<overlib i18n="true">editaBarraOver</overlib>
+						<url>/servlet/ControlerConfiguracionGraficos?accion=70&amp;tipoEditar=todos</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+				</menu>
+				<menu name="barraanadir" codOperacion="69">
+					<nombreMostrar i18n="true">creaBarra</nombreMostrar>
+					<overlib i18n="true">creaBarraOver</overlib>
+					<url>/servlet/ControlerConfiguracionGraficos?accion=72</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="barraasignar" type="submenu">
+					<nombreMostrar i18n="true">asociarBarraUsuario</nombreMostrar>
+					<overlib i18n="true">asociarBarraUsuarioOver</overlib>
+					<url>/servlet/Controler</url>
+					<tipoVentana>_self</tipoVentana>
+					<menu name="barrasusuario" codOperacion="148">
+						<nombreMostrar i18n="true">todasBarras</nombreMostrar>
+						<overlib i18n="true">allBarrasOver</overlib>
+						<url>/servlet/Controler?accion=33&amp;tipoAsigBarr=todas&amp;origen=barras</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+					<menu name="misbarras" codOperacion="149">
+						<nombreMostrar i18n="true">misBarras</nombreMostrar>
+						<overlib i18n="true">misBarrasOver</overlib>
+						<url>/servlet/Controler?accion=33&amp;tipoAsigBarr=misbarras&amp;origen=barras</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+				</menu>				
+				<menu name="monitorbarraasociar" codOperacion="155">
+					<nombreMostrar i18n="true">monitorbarraasociar</nombreMostrar>
+					<overlib i18n="true">monitorbarraasociarOver</overlib>
+					<url>/servlet/Controler?accion=33&amp;origen=asocbarmoni</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<!-- H237633 - Mejora Tiempo Barras Sistema -->
+				<menu name="barraSistemaConfigurar" codOperacion="390">
+					<nombreMostrar i18n="true">configurarBarraSistema</nombreMostrar>
+					<overlib i18n="true">configurarBarraSistemaOver</overlib>
+					<url>/servlet/ControlerConfiguracionGraficos?accion=970</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<!-- FIN H237633  -->
+			</menu>
+		</menu>
+		<menu name="usuario" type="submenu">
+			<nombreMostrar i18n="true">usuario</nombreMostrar>
+			<overlib i18n="true">usuarioOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+			<menu name="consultas" type="submenu">
+				<nombreMostrar i18n="true">consultas</nombreMostrar>
+				<overlib i18n="true">consultasOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<menu name="otrassesiones" codOperacion="154">
+					<nombreMostrar i18n="true">sesiones</nombreMostrar>
+					<overlib i18n="true">otrassesionesOver</overlib>
+					<url>/servlet/Controler?accion=33&amp;origen=sesiones</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="fichausuariobuscar" codOperacion="239">
+					<nombreMostrar i18n="true">fichausuariobuscar</nombreMostrar>
+					<overlib i18n="true">fichausuariobuscarOver</overlib>
+					<url>/servlet/Controler?accion=33&amp;origen=fichausuario</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="usuarioeditar" codOperacion="72">
+				<nombreMostrar i18n="true">editaUsuario</nombreMostrar>
+				<overlib i18n="true">editaUsuarioOver</overlib>
+				<url>/servlet/Controler?accion=33&amp;pantalla=editarUsuario</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="usuariocrear" codOperacion="73">
+				<nombreMostrar i18n="true">creaUsuario</nombreMostrar>
+				<overlib i18n="true">creaUsuarioOver</overlib>
+				<url>/servlet/Controler?accion=613</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="perfiles" type="submenu">
+				<nombreMostrar i18n="true">perfilesConf</nombreMostrar>
+				<overlib i18n="true">perfilesConfOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+				<menu name="perfilmodificar" type="submenu">
+					<nombreMostrar i18n="true">perfilConf</nombreMostrar>
+					<overlib i18n="true">perfilConfOver</overlib>
+					<url>/servlet/Controler</url>
+					<tipoVentana>_self</tipoVentana>
+					<menu name="perfileditar" codOperacion="77">
+						<nombreMostrar i18n="true">editaPerfil</nombreMostrar>
+						<overlib i18n="true">editaPerfilOver</overlib>
+						<url>/servlet/Controler?accion=120</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+					<menu name="perfilanadir" codOperacion="78">
+						<nombreMostrar i18n="true">creaPerfil</nombreMostrar>
+						<overlib i18n="true">creaPerfilOver</overlib>
+						<url>/servlet/Controler?accion=455</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+				</menu>
+				<menu name="perfilesusuario" codOperacion="162">
+					<nombreMostrar i18n="true">perfilesusuario</nombreMostrar>
+					<overlib i18n="true">perfilesusuarioOver</overlib>
+					<url>/servlet/Controler?accion=33&amp;origen=perfilesusuario</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="gruposusuarios" type="submenu">
+				<nombreMostrar i18n="true">gruposusuarios</nombreMostrar>
+				<overlib i18n="true">gruposusuariosOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+				<menu name="gruposadmon" type="submenu">
+					<nombreMostrar i18n="true">grupoadmon</nombreMostrar>
+					<overlib i18n="true">grupoadmonOver</overlib>
+					<url>/servlet/Controler</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+					<menu name="gruposusuariosanadir" codOperacion="232">
+						<nombreMostrar i18n="true">gruposusuariosanadir</nombreMostrar>
+						<overlib i18n="true">gruposusuariosanadirOver</overlib>
+						<url>/servlet/ControlerGruposUsuarios?accion=565</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+					<menu name="gruposusuarioseditar" codOperacion="232">
+						<nombreMostrar i18n="true">gruposusuarioseditar</nombreMostrar>
+						<overlib i18n="true">gruposusuarioseditarOver</overlib>
+						<url>/servlet/ControlerGruposUsuarios?accion=567</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+				</menu>
+				<menu name="gruposuplantaeditar" codOperacion="242">
+					<nombreMostrar i18n="true">gruposuplantaeditar</nombreMostrar>
+					<overlib i18n="true">gruposuplantaeditarOver</overlib>
+					<url>/servlet/Controler?accion=33&amp;origen=listadosuplantacion</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="gruposfavoritos" codOperacion="259">
+				<nombreMostrar i18n="true">gruposFavoritos</nombreMostrar>
+				<overlib i18n="true">gruposFavoritosOver</overlib>
+				<url>/servlet/Controler?accion=33&amp;origen=favoritos</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="sectoresfavoritos" codOperacion="266">
+				<nombreMostrar i18n="true">sectoresFavoritos</nombreMostrar>
+				<overlib i18n="true">sectoresFavoritosOver</overlib>
+				<url>/servlet/Controler?accion=33&amp;origen=favoritosSec</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="agendausuario" codOperacion="301">
+				<nombreMostrar i18n="true">agenda</nombreMostrar>
+				<overlib i18n="true">agendaOver</overlib>
+				<url>/servlet/Controler?accion=33&amp;origen=agenda</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="alarma" type="submenu">
+			<nombreMostrar i18n="true">alarmas</nombreMostrar>
+			<overlib i18n="true">menuAlarmas</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+			<menu name="alarmaanadir" codOperacion="306">
+				<nombreMostrar i18n="true">alarmasCrear</nombreMostrar>
+				<overlib i18n="true">menuAlarmasCrear</overlib>
+				<url>/servlet/ControlerAlarmas?accion=772</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="alarmaeditar" codOperacion="307">
+				<nombreMostrar i18n="true">alarmasEditar</nombreMostrar>
+				<overlib i18n="true">menuAlarmasEditar</overlib>
+				<url>/servlet/ControlerAlarmas?accion=786</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="empresas" type="submenu">
+			<nombreMostrar i18n="true">empresas</nombreMostrar>
+			<overlib i18n="true">empresasOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+			<menu name="nivelacionempresas" codOperacion="227">
+				<nombreMostrar i18n="true">nivelacionempresas</nombreMostrar>
+				<overlib i18n="true">nivelacionempresasOver</overlib>
+				<url>/servlet/Controler?accion=556&amp;origen=nivelacion</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="zona" type="submenu">
+			<nombreMostrar i18n="true">zonas</nombreMostrar>
+			<overlib i18n="true">zonasOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+			<menu name="zonaanadir" codOperacion="320">
+				<nombreMostrar i18n="true">crear</nombreMostrar>
+				<overlib i18n="true">crearZonaOver</overlib>
+				<url>/servlet/ControlerZonas?accion=801</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="zonaeditar" codOperacion="321">
+				<nombreMostrar i18n="true">editar</nombreMostrar>
+				<overlib i18n="true">editarZonaOver</overlib>
+				<url>/servlet/ControlerZonas?accion=802</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="sectores" type="submenu">
+			<nombreMostrar i18n="true">sectores</nombreMostrar>
+			<overlib i18n="true">sectoresOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+			<menu name="sectoresmonitor" type="submenu">
+				<nombreMostrar i18n="true">S.Monitor</nombreMostrar>
+				<overlib i18n="true">sectoresOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+				<menu name="sectoresmonitoreditar" codOperacion="96">
+					<nombreMostrar i18n="true">editarSector</nombreMostrar>
+					<overlib i18n="true">editarSectorOver</overlib>
+					<url>/servlet/ControlerSectores?accion=191&amp;tipo=1</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="sectoresmonitoranadir" codOperacion="97">
+					<nombreMostrar i18n="true">crearSector</nombreMostrar>
+					<overlib i18n="true">crearSectorOver</overlib>
+					<url>/servlet/ControlerSectores?accion=190&amp;tipo=1</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="sectoresdistribucion" type="submenu">
+				<nombreMostrar i18n="true">S.Distribucion</nombreMostrar>
+				<overlib i18n="true">sectoresOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+				<menu name="sectoresdistribucioneditar" codOperacion="230">
+					<nombreMostrar i18n="true">editarSector</nombreMostrar>
+					<overlib i18n="true">editarSectorOver</overlib>
+					<url>/servlet/ControlerSectores?accion=191&amp;tipo=0</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="sectoresdistribucionanadir" codOperacion="229">
+					<nombreMostrar i18n="true">crearSector</nombreMostrar>
+					<overlib i18n="true">crearSectorOver</overlib>
+					<url>/servlet/ControlerSectores?accion=190&amp;tipo=0</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+		</menu>
+		<menu name="bade" type="submenu">
+			<nombreMostrar i18n="true">BAD</nombreMostrar>
+			<overlib i18n="true">editarBADEOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="bad" codOperacion="151">
+				<nombreMostrar i18n="true">BAD</nombreMostrar>
+				<overlib i18n="true">editarBADOver</overlib>
+				<url>/servlet/ControlerBad?accion=384</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="badhistorico" codOperacion="372">
+				<nombreMostrar i18n="true">badhistorico</nombreMostrar>
+				<overlib i18n="true">historicoBADOver</overlib>
+				<url>/servlet/ControlerHistoricoBad?accion=903</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<!-- H266967 -->
+			<menu name="badTime" type="submenu">
+				<nombreMostrar i18n="true">admTiemposBad</nombreMostrar>
+				<overlib i18n="true">admTiemposBadOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+				<menu name="badEditTime" codOperacion="403">
+					<nombreMostrar i18n="true">editarTiempo</nombreMostrar>
+					<overlib i18n="true">editarTiempoOver</overlib>
+					<url>/servlet/ControlerBad?accion=991</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+			    </menu>
+			</menu>
+			<!-- fin H266967 -->
+		</menu>				
+		<menu name="monitor" type="submenu">
+			<nombreMostrar i18n="true">monitores</nombreMostrar>
+			<overlib i18n="true">monitoresOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+			<menu name="monitoranadir" codOperacion="120">
+				<nombreMostrar i18n="true">crear</nombreMostrar>
+				<overlib i18n="true">crearMonitorOver</overlib>
+				<url>/servlet/ControlerConfMonitores?accion=297</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="monitoreditar" type="submenu">
+				<nombreMostrar i18n="true">modificar</nombreMostrar>
+				<overlib i18n="true">editarMonitorOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+				<menu name="monitoreditarmios" codOperacion="121">
+					<nombreMostrar i18n="true">mismonitores</nombreMostrar>
+					<overlib i18n="true">editarMonitorOver</overlib>
+					<url>/servlet/ControlerConfMonitores?accion=298&amp;tipoeditarmonitor=mis</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="monitoreditartodos" codOperacion="247">
+					<nombreMostrar i18n="true">monitoresusuario</nombreMostrar>
+					<overlib i18n="true">editarMonitorOver</overlib>
+					<url>/servlet/ControlerConfMonitores?accion=298&amp;tipoeditarmonitor=todos</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="monitorasociar" type="submenu">
+				<nombreMostrar i18n="true">asociacionMonitor</nombreMostrar>
+				<overlib i18n="true">asociacionMonitorOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+				<menu name="monitorasociartodos" codOperacion="250">
+					<nombreMostrar i18n="true">monitoresusuario</nombreMostrar>
+					<overlib i18n="true">asociacionMonitorOver</overlib>
+					<url>/servlet/Controler?accion=33&amp;origen=monitor&amp;tipoAsociar=todos</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="monitorasociarmios" codOperacion="122">
+					<nombreMostrar i18n="true">mismonitores</nombreMostrar>
+					<overlib i18n="true">asociacionMonitorOver</overlib>
+					<url>/servlet/Controler?accion=33&amp;origen=monitor&amp;tipoAsociar=mis</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+		</menu>
+		<menu name="distribucion" type="submenu">
+			<nombreMostrar i18n="true">distribucion</nombreMostrar>
+			<overlib i18n="true">distribucionOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+			<menu name="tabladistribucion" codOperacion="10">
+				<nombreMostrar i18n="true">distribucion</nombreMostrar>
+				<overlib i18n="true">menuDistribucion</overlib>
+				<url>/servlet/Controler?accion=25</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="eventos" type="submenu">
+				<nombreMostrar i18n="true">eventos</nombreMostrar>
+				<overlib i18n="true">menuEventos</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+				<menu name="eventosanadir" codOperacion="295">
+					<nombreMostrar i18n="true">eventosCrear</nombreMostrar>
+					<overlib i18n="true">menuEventosCrear</overlib>
+					<url>/servlet/ControlerEventos?accion=749</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="eventoseditar" codOperacion="297">
+					<nombreMostrar i18n="true">eventosEditar</nombreMostrar>
+					<overlib i18n="true">menuEventosEditar</overlib>
+					<url>/servlet/ControlerEventos?accion=759</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="grupotrabajo" type="submenu">
+				<nombreMostrar i18n="true">grupotrabajo</nombreMostrar>
+				<overlib i18n="true">grupoTrabajoOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+				<menu name="grupotrabajoeditar" codOperacion="84">
+					<nombreMostrar i18n="true">editarGrupo</nombreMostrar>
+					<overlib i18n="true">editarOver</overlib>
+					<url>/servlet/ControlerDistribucion?accion=99</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="grupotrabajoanadir" codOperacion="85">
+					<nombreMostrar i18n="true">crearGrupo</nombreMostrar>
+					<overlib i18n="true">crearOver</overlib>
+					<url>/servlet/ControlerDistribucion?accion=98</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="asociaciongrupo" codOperacion="87">
+					<nombreMostrar i18n="true">asociaciongrupo</nombreMostrar>
+					<overlib i18n="true">asociaciongrupoOver</overlib>
+					<url>/servlet/Controler?accion=33&amp;origen=asociacionGrupo&amp;orig=tecnicosMulti&amp;soloTecnicos=yes&amp;modo=106</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="misgrupos" codOperacion="87">
+					<nombreMostrar i18n="true">misGrupos</nombreMostrar>
+					<overlib i18n="true">misGruposOver</overlib>
+					<url>/servlet/ControlerDistribucion?accion=102&amp;origen=menu</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="sectoresgtasociar" codOperacion="270">
+					<nombreMostrar i18n="true">sectoresgrtr</nombreMostrar>
+					<overlib i18n="true">sectoresgrtrOver</overlib>
+					<url>/servlet/ControlerDistribucion?accion=99&amp;modo=684&amp;orig=sectoresgrtr</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="equipotrabajo" type="submenu">
+				<nombreMostrar i18n="true">equipotrabajo</nombreMostrar>
+				<overlib i18n="true">equipoTrabajoOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+				<menu name="equipotrabajoeditar" codOperacion="88">
+					<nombreMostrar i18n="true">editarEquipo</nombreMostrar>
+					<overlib i18n="true">editarOver</overlib>
+					<url>/servlet/ControlerDistribucion?accion=105</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="equipotrabajoanadir" codOperacion="89">
+					<nombreMostrar i18n="true">crearEquipo</nombreMostrar>
+					<overlib i18n="true">crearOver</overlib>
+					<url>/servlet/ControlerDistribucion?accion=104</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="asociacionequipo" codOperacion="91">
+					<nombreMostrar i18n="true">asociacionequipo</nombreMostrar>
+					<overlib i18n="true">asociacionequipoOver</overlib>
+					<url>/servlet/Controler?accion=33&amp;origen=asociarequipo&amp;orig=indisp&amp;grtr=yes&amp;modo=106</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="barrasnivelacionmodificar" type="submenu">
+				<nombreMostrar i18n="true">barraNivelacionConf</nombreMostrar>
+				<overlib i18n="true">barraNivelacionConfOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<menu name="barrasnivelacioneditar" codOperacion="59">
+					<nombreMostrar i18n="true">editar</nombreMostrar>
+					<overlib i18n="true">editaBarraNivelacionOver</overlib>
+					<url>/servlet/Controler?accion=80</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="barrasnivelacionanadir" codOperacion="60">
+					<nombreMostrar i18n="true">crear</nombreMostrar>
+					<overlib i18n="true">creaBarraNivelacionOver</overlib>
+					<url>/servlet/Controler?accion=82</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="tiposbuzonmodificar" type="submenu">
+					<nombreMostrar i18n="true">tipoBuzonConf</nombreMostrar>
+					<overlib i18n="true">tipoBuzonConfOver</overlib>
+					<url>/servlet/Controler</url>
+					<tipoVentana>_self</tipoVentana>
+					<menu name="tiposbuzoneditar" codOperacion="102">
+						<nombreMostrar i18n="true">editar</nombreMostrar>
+						<overlib i18n="true">editaTipoBuzonOver</overlib>
+						<url>/servlet/Controler?accion=270</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+					<menu name="tiposbuzonanadir" codOperacion="103">
+						<nombreMostrar i18n="true">crear</nombreMostrar>
+						<overlib i18n="true">creaTipoBuzonOver</overlib>
+						<url>/servlet/Controler?accion=272</url>
+						<tipoVentana>_self</tipoVentana>
+						<invisible>MOV</invisible>
+					</menu>
+				</menu>
+			</menu>
+		</menu>
+		<menu name="preciario" type="submenu">
+			<nombreMostrar i18n="true">preciario</nombreMostrar>
+			<overlib i18n="true">preciarioOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+			<menu name="componentes" type="submenu">
+				<nombreMostrar i18n="true">componentes</nombreMostrar>
+				<overlib i18n="true">componentesOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<menu name="componentesanadir" codOperacion="129">
+					<nombreMostrar i18n="true">crear</nombreMostrar>
+					<overlib i18n="true">anadirComponentesOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=344</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="componenteseditar" codOperacion="128">
+					<nombreMostrar i18n="true">editar</nombreMostrar>
+					<overlib i18n="true">editarComponentesOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=342</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="actividades" type="submenu">
+				<nombreMostrar i18n="true">actividades</nombreMostrar>
+				<overlib i18n="true">actividadesOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<menu name="actividadesanadir" codOperacion="132">
+					<nombreMostrar i18n="true">crear</nombreMostrar>
+					<overlib i18n="true">anadirActividadesOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=350</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="actividadeseditar" codOperacion="131">
+					<nombreMostrar i18n="true">editar</nombreMostrar>
+					<overlib i18n="true">editarActividadesOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=348</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="baremoeditar" codOperacion="140">
+					<nombreMostrar i18n="true">editarBaremo</nombreMostrar>
+					<overlib i18n="true">editarBaremoOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=348&amp;origen=Baremo</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="actividadesconsultar" codOperacion="130">
+					<nombreMostrar i18n="true">consultarActividades</nombreMostrar>
+					<overlib i18n="true">consultarActividadesOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=348&amp;origen=Consulta</url>
+					<tipoVentana>_self</tipoVentana>
+				</menu>
+				<menu name="importar" codOperacion="131">
+					<nombreMostrar i18n="true">cargarActividades</nombreMostrar>
+					<overlib i18n="true">cargarActividadesOver</overlib>
+					<url>/servlet/Controler?accion=369&amp;origen=Preciario</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="precios" type="submenu">
+				<nombreMostrar i18n="true">precios</nombreMostrar>
+				<overlib i18n="true">preciosOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<menu name="preciosanadir" codOperacion="135">
+					<nombreMostrar i18n="true">crear</nombreMostrar>
+					<overlib i18n="true">anadirPreciosOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=356</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="precioseditar" codOperacion="134">
+					<nombreMostrar i18n="true">editar</nombreMostrar>
+					<overlib i18n="true">editarPreciosOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=354</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="codigos" type="submenu">
+				<nombreMostrar i18n="true">tipactprec</nombreMostrar>
+				<overlib i18n="true">tipactprecOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<menu name="codigosanadir" codOperacion="138">
+					<nombreMostrar i18n="true">crear</nombreMostrar>
+					<overlib i18n="true">anadirTipactprecOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=362</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="codigoseditar" codOperacion="137">
+					<nombreMostrar i18n="true">editar</nombreMostrar>
+					<overlib i18n="true">editarTipactprecOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=360</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="gama" type="submenu">
+				<nombreMostrar i18n="true">gamas</nombreMostrar>
+				<overlib i18n="true">gamasOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<menu name="gamaanadir" codOperacion="143">
+					<nombreMostrar i18n="true">anadirGama</nombreMostrar>
+					<overlib i18n="true">anadirGamaOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=394</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="gamaeditar" codOperacion="142">
+					<nombreMostrar i18n="true">editarGama</nombreMostrar>
+					<overlib i18n="true">editarGamaOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=392</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			
+			<!-- H278031 -->		
+			<menu name="compatibilidadWinest" type="submenu">
+				<nombreMostrar i18n="true">compatibilidadWinest</nombreMostrar>
+				<overlib i18n="true">compatibilidadWinestOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<menu name="compatibilidadWinestAnadir" codOperacion="405">
+					<nombreMostrar i18n="true">crear</nombreMostrar>
+					<overlib i18n="true">compatibilidadWinestanadirOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=994</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="compatibilidadWinestEditar" codOperacion="406">
+					<nombreMostrar i18n="true">editar</nombreMostrar>
+					<overlib i18n="true">compatibilidadWinestEditarOver</overlib>
+					<url>/servlet/ControlerPreciario?accion=995</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+		<!-- fin H278031 -->	
+			
+		</menu>
+		<menu name="plantillas" type="submenu">
+			<nombreMostrar i18n="true">plantillas</nombreMostrar>
+			<overlib i18n="true">plantillasOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+			<menu name="plantillasanadir" codOperacion="218">
+				<nombreMostrar i18n="true">crearPlantilla</nombreMostrar>
+				<overlib i18n="true">crearPlantillaOver</overlib>
+				<url>/servlet/ControlerPlantillas?accion=533</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="plantillaseditar" codOperacion="219">
+				<nombreMostrar i18n="true">editarPlantilla</nombreMostrar>
+				<overlib i18n="true">editarPlantillaOver</overlib>
+				<url>/servlet/ControlerPlantillas?accion=534</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="logistica" type="submenu">
+			<nombreMostrar i18n="true">logisticaConf</nombreMostrar>
+			<overlib i18n="true">logisticaConfOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="sustitutivoeditar" codOperacion="237">
+				<nombreMostrar i18n="true">editaSustitutivo</nombreMostrar>
+				<overlib i18n="true">editaSustitutivoOver</overlib>
+				<url>/servlet/ControlerLogistica?accion=591</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="sustitutivoanadir" codOperacion="236">
+				<nombreMostrar i18n="true">creaSustitutivo</nombreMostrar>
+				<overlib i18n="true">creaSustitutivoOver</overlib>
+				<url>/servlet/ControlerLogistica?accion=593</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="sustitutivobuscar" codOperacion="370">
+				<nombreMostrar i18n="true">consultaSustitutivo</nombreMostrar>
+				<overlib i18n="true">consultaSustitutivoOver</overlib>
+				<url>/servlet/ControlerLogistica?accion=591&amp;modo=filtroConsultar</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>			
+		</menu>
+		<menu name="planChoque" type="submenu">
+			<nombreMostrar i18n="true">planChoqueConf</nombreMostrar>
+			<overlib i18n="true">planChoqueConfOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="planchoqueanadir" codOperacion="428">
+				<nombreMostrar i18n="true">altaPlanChoque</nombreMostrar>
+				<overlib i18n="true">altaPlanChoqueOver</overlib>
+				<url>/servlet/ControlerPlanChoque?accion=1070</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="planchoquequitar" codOperacion="429">
+				<nombreMostrar i18n="true">bajaPlanChoque</nombreMostrar>
+				<overlib i18n="true">bajaPlanChoqueOver</overlib>
+				<url>/servlet/ControlerPlanChoque?accion=1071</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="planchoquebuscar" codOperacion="430">
+				<nombreMostrar i18n="true">consultaPlanChoque</nombreMostrar>
+				<overlib i18n="true">consultaPlanChoqueOver</overlib>
+				<url>/servlet/ControlerPlanChoque?accion=1074</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>			
+		</menu>
+		<menu name="prodserv" type="submenu">
+			<nombreMostrar i18n="true">prodservConf</nombreMostrar>
+			<overlib i18n="true">prodservConfOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="prodserveditar" codOperacion="279">
+				<nombreMostrar i18n="true">editaProdserv</nombreMostrar>
+				<overlib i18n="true">editaProdservOver</overlib>
+				<url>/servlet/ControlerLogistica?accion=591&amp;sinlogistica=si</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="prodservanadir" codOperacion="278">
+				<nombreMostrar i18n="true">creaProdserv</nombreMostrar>
+				<overlib i18n="true">creaProdservOver</overlib>
+				<url>/servlet/ControlerLogistica?accion=593&amp;sinlogistica=si</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="prodservbuscar" codOperacion="369">
+				<nombreMostrar i18n="true">consultaProdserv</nombreMostrar>
+				<overlib i18n="true">consultaProdservOver</overlib>
+				<url>/servlet/ControlerLogistica?accion=591&amp;sinlogistica=si&amp;modo=filtroConsultar</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="prodservLogistica" type="submenu">
+				<nombreMostrar i18n="true">prodservLogisticaConf</nombreMostrar>
+				<overlib i18n="true">prodservLogisticaConfOver</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				
+				<menu name="prodservLogisticaEditar" codOperacion="402">
+					<nombreMostrar i18n="true">editaProdservLogistica</nombreMostrar>
+					<overlib i18n="true">editaProdservLogisticaOver</overlib>
+					<url>/servlet/ControlerLogistica?accion=981&amp;modo=filtroEditarPSLogisticaPermitida&amp;origen=PSLogisticaPermitida&amp;sindespiece=si</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="prodserveLogisticaCrear" codOperacion="400">
+					<nombreMostrar i18n="true">creaProdservLogistica</nombreMostrar>
+					<overlib i18n="true">creaProdservLogisticaOver</overlib>
+					<url>/servlet/ControlerLogistica?accion=979&amp;modo=filtroCrear&amp;origen=PSLogisticaPermitida</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="prodservLogisticaBuscar" codOperacion="401">
+					<nombreMostrar i18n="true">consultaProdservLogistica</nombreMostrar>
+					<overlib i18n="true">consultaProdservLogisticaOver</overlib>
+					<url>/servlet/ControlerLogistica?accion=981&amp;modo=filtroConsultarPSLogisticaPermitida&amp;origen=PSLogisticaPermitida&amp;sindespiece=si</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				
+			</menu>
+		</menu>
+		<menu name="retrofranqueo" type="submenu">
+			<nombreMostrar i18n="true">retrofranqueo</nombreMostrar>
+			<overlib i18n="true">retrofranqueo</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="horasretrofr" codOperacion="327">
+				<nombreMostrar i18n="true">configurar</nombreMostrar>
+				<overlib i18n="true">retrofranqueoOver</overlib>
+				<url>/servlet/Controler?accion=810</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="consultarhorasretrofr" codOperacion="350">
+				<nombreMostrar i18n="true">consultar</nombreMostrar>
+				<overlib i18n="true">consRetrofranqueoOver</overlib>
+				<url>/servlet/Controler?accion=810&amp;consulta=true</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="infanciarepetida" codOperacion="366">
+			<nombreMostrar i18n="true">infanciarepetida</nombreMostrar>
+			<overlib i18n="true">infanciarepetidaOver</overlib>
+			<url>/servlet/Controler?accion=887</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="captcha" type="submenu">
+			<nombreMostrar i18n="true">captcha</nombreMostrar>
+			<overlib i18n="true">captcha</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="captchaconfigurar" codOperacion="351">
+				<nombreMostrar i18n="true">configurar</nombreMostrar>
+				<overlib i18n="true">captchaOver</overlib>
+				<url>/servlet/Controler?accion=863</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="captchaconsultar" codOperacion="354">
+				<nombreMostrar i18n="true">consultar</nombreMostrar>
+				<overlib i18n="true">consCaptchaOver</overlib>
+				<url>/servlet/Controler?accion=863&amp;consulta=true</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="reviadmin" type="submenu">
+			<nombreMostrar i18n="true">reviConf</nombreMostrar>
+			<overlib i18n="true">reviConfOver</overlib>
+			<url>/servlet/ControlerRevisiones</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="revianadir" codOperacion="373">
+				<nombreMostrar i18n="true">crear</nombreMostrar>
+				<overlib i18n="true">creaReviOver</overlib>
+				<url>/servlet/ControlerRevisiones?accion=906</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="revieditar" codOperacion="374">
+				<nombreMostrar i18n="true">editar</nombreMostrar>
+				<overlib i18n="true">editaReviOver</overlib>
+				<url>/servlet/ControlerRevisiones?accion=907&amp;modo=editar</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="faqadmin" type="submenu">
+			<nombreMostrar i18n="true">faqConf</nombreMostrar>
+			<overlib i18n="true">faqConfOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="faqanadir" codOperacion="281">
+				<nombreMostrar i18n="true">crear</nombreMostrar>
+				<overlib i18n="true">creaFaqOver</overlib>
+				<url>/servlet/ControlerFaq?accion=702</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="faqeditar" codOperacion="282">
+				<nombreMostrar i18n="true">editar</nombreMostrar>
+				<overlib i18n="true">editaFaqOver</overlib>
+				<url>/servlet/ControlerFaq?accion=703</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="centroTecnico" type="submenu">
+			<nombreMostrar i18n="true">centrostecnico</nombreMostrar>
+			<overlib i18n="true">centroTecnicoOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="centroTecnicoCrear" codOperacion="435">
+				<nombreMostrar i18n="true">crear</nombreMostrar>
+				<overlib i18n="true">centroTecnicoCrearOver</overlib>
+				<url>/servlet/ControlerCentroTecnico?accion=1118</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="centroTecnicoEditar" codOperacion="436">
+				<nombreMostrar i18n="true">editar</nombreMostrar>
+				<overlib i18n="true">centroTecnicoEditarOver</overlib>
+				<url>/servlet/ControlerCentroTecnico?accion=1119</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="bloqueoServicios" type="submenu">
+			<nombreMostrar i18n="true">bloqueoServicios</nombreMostrar>
+			<overlib i18n="true">bloqueoServicios</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="captchaconfigurar" codOperacion="437">
+				<nombreMostrar i18n="true">configurar</nombreMostrar>
+				<overlib i18n="true">bloqServOver</overlib>
+				<url>/servlet/Controler?accion=1123</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="captchaconsultar" codOperacion="438">
+				<nombreMostrar i18n="true">consultar</nombreMostrar>
+				<overlib i18n="true">consBloqServOver</overlib>
+				<url>/servlet/Controler?accion=1123&amp;consulta=true</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="monitorizacion" codOperacion="439">
+			<nombreMostrar i18n="true">monitorizacion</nombreMostrar>
+			<overlib i18n="true">monitorizacionOver</overlib>
+			<url>/servlet/Controler?accion=1136&amp;fase=0</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>	
+		<menu name="eventosVisord" codOperacion="440">
+			<nombreMostrar i18n="true">eventosVisord</nombreMostrar>
+			<overlib i18n="true">eventosvisordOver</overlib>
+			<url>/servlet/Controler?accion=1142&amp;fase=0</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="admTradAT2VNF" codOperacion="441">
+			<nombreMostrar i18n="true">admTradAT2VNF</nombreMostrar>
+			<overlib i18n="true">admTradAT2VNFOver</overlib>
+			<url>/servlet/ControlerCodigosAT2VNF?accion=1176</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+
+	</menu>
+	<menu name="pruebas" type="submenu">
+		<nombreMostrar i18n="true">pruebas</nombreMostrar>
+		<overlib i18n="true">pruebasOver</overlib>
+		<url>/servlet/Controler</url>
+		<tipoVentana>_self</tipoVentana>
+		<menu name="pruebaadsl">
+			<nombreMostrar i18n="true">pruebaAdsl</nombreMostrar>
+			<overlib i18n="true">pruebaAdslOver</overlib>
+			<url>/servlet/Controler?accion=28</url>
+			<tipoVentana>_self</tipoVentana>
+		</menu>
+		<menu name="pruebaibermic" codOperacion="287">
+			<nombreMostrar i18n="true">pruebaIbermic</nombreMostrar>
+			<overlib i18n="true">pruebaIbermicOver</overlib>
+			<url>/servlet/ControlerWapBridge?accion=733</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>PC</invisible>
+		</menu>
+		<menu name="localizacion" type="submenu">
+			<nombreMostrar i18n="true">localizacion</nombreMostrar>
+			<overlib i18n="true">localizacion</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="especializadaslanzar" codOperacion="212">
+				<nombreMostrar i18n="true">especializadaslanzar</nombreMostrar>
+				<overlib i18n="true">especializadaslanzarOver</overlib>
+				<url>/servlet/ControlerPruebasSera?accion=523</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="localizacionlanzar" codOperacion="186">
+				<nombreMostrar i18n="true">localizacionlanzar</nombreMostrar>
+				<overlib i18n="true">localizacionlanzarOver</overlib>
+				<url>/servlet/ControlerPruebasSera?accion=473</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="localizacionconsultar" codOperacion="187">
+				<nombreMostrar i18n="true">localizacionconsultar</nombreMostrar>
+				<overlib i18n="true">localizacionOver</overlib>
+				<url>/servlet/ControlerPruebasSera?accion=475</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+		</menu>
+		<menu name="final" type="submenu">
+			<nombreMostrar i18n="true">final</nombreMostrar>
+			<overlib i18n="true">final</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="finallanzar" codOperacion="206">
+				<nombreMostrar i18n="true">finallanzar</nombreMostrar>
+				<overlib i18n="true">finallanzarOver</overlib>
+				<url>/servlet/ControlerPruebasSera?accion=511</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="finalconsultar" codOperacion="207">
+				<nombreMostrar i18n="true">finalconsultar</nombreMostrar>
+				<overlib i18n="true">finalOver</overlib>
+				<url>/servlet/ControlerPruebasSera?accion=513</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+		</menu>
+		<menu name="analisisaveria" type="submenu">
+			<nombreMostrar i18n="true">analisisaveria</nombreMostrar>
+			<overlib i18n="true">analisisaveria</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="analisisaverialanzar" codOperacion="210">
+				<nombreMostrar i18n="true">analisisaverialanzar</nombreMostrar>
+				<overlib i18n="true">analisisaverialanzarOver</overlib>
+				<url>/servlet/ControlerPruebasSera?accion=515</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="analisisaveriaconsultar" codOperacion="211">
+				<nombreMostrar i18n="true">analisisaveriaconsultar</nombreMostrar>
+				<overlib i18n="true">analisisaveriaOver</overlib>
+				<url>/servlet/ControlerPruebasSera?accion=517</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+		</menu>
+		<menu name="fichacliente" type="submenu">
+			<nombreMostrar i18n="true">fichacliente</nombreMostrar>
+			<overlib i18n="true">fichacliente</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="fichaclientelanzar" codOperacion="208">
+				<nombreMostrar i18n="true">fichaclientelanzar</nombreMostrar>
+				<overlib i18n="true">fichaclientelanzarOver</overlib>
+				<url>/servlet/ControlerPruebasSera?accion=519</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+			<menu name="fichaclienteconsultar" codOperacion="209">
+				<nombreMostrar i18n="true">fichaclienteconsultar</nombreMostrar>
+				<overlib i18n="true">fichaclienteOver</overlib>
+				<url>/servlet/ControlerPruebasSera?accion=521</url>
+				<tipoVentana>_self</tipoVentana>
+			</menu>
+		</menu>
+	</menu>
+	<menu name="documentacion" type="submenu">
+		<nombreMostrar i18n="true">documentacion</nombreMostrar>
+		<overlib i18n="true">documentacionOver</overlib>
+		<url>/servlet/Controler</url>
+		<tipoVentana>_self</tipoVentana>
+		<menu name="frases">
+			<nombreMostrar i18n="true">frases</nombreMostrar>
+			<overlib i18n="true">frasesOver</overlib>
+			<url>/servicios/Controler?accion=31</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>PC</invisible>
+		</menu>
+		<menu name="usuarioactivo">
+			<nombreMostrar i18n="true">usuarioactivo</nombreMostrar>
+			<overlib i18n="true">usuarioactivoOver</overlib>
+			<url>/servlet/ControlerSesiones?accion=438&amp;origen=utils</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>PC</invisible>
+		</menu>
+		<menu name="mapa" codOperacion="45">
+			<nombreMostrar i18n="true">arbol</nombreMostrar>
+			<overlib i18n="true">arbolOver</overlib>
+			<url>/servlet/Controler?accion=188</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="faq">
+			<nombreMostrar i18n="true">FAQS</nombreMostrar>
+			<overlib i18n="true">FAQSOver</overlib>
+			<url>/servlet/ControlerFaq?accion=697</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="manualespdf">
+			<nombreMostrar i18n="true">documentacionpdf</nombreMostrar>
+			<overlib i18n="true">documentacionpdfOver</overlib>
+			<url>/servlet/ControlerAyudas?accion=448&amp;docu=manuales</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="procesospdf">
+			<nombreMostrar i18n="true">procesospdf</nombreMostrar>
+			<overlib i18n="true">procesospdfOver</overlib>
+			<url>/servlet/ControlerAyudas?accion=661&amp;docu=procesos</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="videos">
+			<nombreMostrar i18n="true">videos</nombreMostrar>
+			<overlib i18n="true">videosOver</overlib>
+			<url>/servlet/ControlerAyudas?accion=738&amp;docu=videos</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="revisiones">
+			<nombreMostrar i18n="true">revisiones</nombreMostrar>
+			<overlib i18n="true">revisionesOver</overlib>
+			<url>/servlet/ControlerRevisiones?accion=911&amp;nombreDocumento=&amp;versionDocumento=&amp;usuario=&amp;inicioVigencia=&amp;finVigencia=&amp;modo=consulta</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="acercade">
+			<nombreMostrar i18n="true">acercade</nombreMostrar>
+			<overlib i18n="true">acercadeOver</overlib>
+			<url>/servlet/ControlerAcercade?accion=746</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+	</menu>
+	<menu name="grupoherramientas" type="submenu">
+		<nombreMostrar i18n="true">herramientas</nombreMostrar>
+		<overlib i18n="true">herramientasOver</overlib>
+		<url>/servlet/Controler</url>
+		<tipoVentana>_self</tipoVentana>
+		<invisible>MOV</invisible>
+		<menu name="muelledescarga" codOperacion="216">
+			<nombreMostrar i18n="true">muelledescarga</nombreMostrar>
+			<overlib i18n="true">muelledescargaOver</overlib>
+			<url>/servlet/Controler?accion=542</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		
+		<!--H102396  INI Pedidos por Averia. Creando submenu. chs 10/02/2009  -->
+		<menu name="almacenM" type="submenu">
+			<nombreMostrar i18n="true">almacenM</nombreMostrar>
+			<overlib i18n="true">almacenM</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		
+		
+		<!--H102396  FIN Pedidos por Averia. chs 10/02/2009  -->
+		
+		<menu name="almacen" codOperacion="342">
+			<nombreMostrar i18n="true">almacen</nombreMostrar>
+			<overlib i18n="true">almacenOver</overlib>
+			<url>/servlet/ControlerAlmacen?accion=838</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<!--H102396  INI Pedidos por Averia. chs 10/02/2009  -->
+			<menu name="almacenmasivo" codOperacion="361">
+				<nombreMostrar i18n="true">almacenmasivo</nombreMostrar>
+				<overlib i18n="true">almacenmasivoOver</overlib>
+				<url>/servlet/ControlerAlmacen?accion=873</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<!--H102396  FIN Pedidos por Averia. chs 10/02/2009  -->
+
+		
+		<menu name="gestionficheros" type="submenu">
+			<nombreMostrar i18n="true">gestionficheros</nombreMostrar>
+			<overlib i18n="true">gestionficheros</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+			<menu name="ficheroupload" codOperacion="139">
+				<nombreMostrar i18n="true">ficheroupload</nombreMostrar>
+				<overlib i18n="true">ficheroupload</overlib>
+				<url>/servlet/Controler?accion=369</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="ficherolista" type="submenu">
+				<nombreMostrar i18n="true">ficherolista</nombreMostrar>
+				<overlib i18n="true">ficherolista</overlib>
+				<url>/servlet/Controler</url>
+				<tipoVentana>_self</tipoVentana>
+				<menu name="ficherosuplistado" codOperacion="163">
+					<nombreMostrar i18n="true">ficherosuplistado</nombreMostrar>
+					<overlib i18n="true">ficherolista</overlib>
+					<url>/servlet/ControlerEjecutor?accion=372&amp;tipoFich=UP</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+				<menu name="ficherosdownlistado" codOperacion="164">
+					<nombreMostrar i18n="true">ficherosdownlistado</nombreMostrar>
+					<overlib i18n="true">ficherolista</overlib>
+					<url>/servlet/ControlerEjecutor?accion=372&amp;tipoFich=DOWN</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>
+			</menu>
+			<menu name="serviciosxml" codOperacion="165">
+				<nombreMostrar i18n="true">serviciosxml</nombreMostrar>
+				<overlib i18n="true">serviciosxml</overlib>
+				<url>/servlet/ControlerEjecutor?accion=375</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="terminalod" codOperacion="311">
+			<nombreMostrar i18n="true">terminal</nombreMostrar>
+			<overlib i18n="true">terminalOver</overlib>
+			<url>/servlet/ControlerEjecutor?accion=789</url>
+			<tipoVentana>_blank</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="planificacion" type="submenu">
+			<nombreMostrar i18n="true">planificacionConf</nombreMostrar>
+			<overlib i18n="true">planificacionConfOver</overlib>
+			<url>/servlet/Controler</url>
+			<tipoVentana>_self</tipoVentana>
+			<menu name="planificacionanadir" codOperacion="203">
+				<nombreMostrar i18n="true">creaPlanificacion</nombreMostrar>
+				<overlib i18n="true">creaPlanificacionOver</overlib>
+				<url>/servlet/ControlerPlanificacion?accion=503</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="planificacioneditar" codOperacion="204">
+				<nombreMostrar i18n="true">editaPlanificacion</nombreMostrar>
+				<overlib i18n="true">editaPlanificacionOver</overlib>
+				<url>/servlet/ControlerPlanificacion?accion=501</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+			<menu name="planificacionbuscar" codOperacion="204">
+				<nombreMostrar i18n="true">consultaHistPlanificacion</nombreMostrar>
+				<overlib i18n="true">consultaHistPlanificacionOver</overlib>
+				<url>/servlet/ControlerPlanificacion?accion=721</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>
+		</menu>
+		<menu name="deskargator" codOperacion="303">
+			<nombreMostrar i18n="true">deskargator</nombreMostrar>
+			<overlib i18n="true">deskargatorOver</overlib>
+			<url>/servlet/Controler?accion=766</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="ficherosactividad" codOperacion="316">
+			<nombreMostrar i18n="true">ficherosactividad</nombreMostrar>
+			<overlib i18n="true">ficherosactividadOver</overlib>
+			<url>/servlet/ControlerActividad?accion=792</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="descargas">
+			<nombreMostrar i18n="true">downloads</nombreMostrar>
+			<overlib i18n="true">downloadsOver</overlib>
+			<url>/servlet/ControlerAyudas?accion=790&amp;docu=downloads</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<menu name="despertador" codOperacion="355">
+			<nombreMostrar i18n="true">despertador</nombreMostrar>
+			<overlib i18n="true">despertadorOver</overlib>
+			<url>/servlet/Controler?accion=871</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>
+		<!-- H105896 -->
+		<menu name="incidenciaSAM" codOperacion="368">
+			<nombreMostrar i18n="true">incidenciaSAM</nombreMostrar>
+			<overlib i18n="true">incidenciaSAMOver</overlib>
+			<url>/servlet/Controler?accion=898</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>
+		</menu>	
+		<!-- Fin H105896 -->
+		
+		<!-- H114581 -->
+		<menu name="regularizacionAverias" type="submenu">
+			<nombreMostrar i18n="true">regularizacionAverias</nombreMostrar>
+			<overlib i18n="true">regularizacionAverias</overlib>
+			<url>/servlet/ControlerRegularizacion</url>
+			<tipoVentana>_self</tipoVentana>
+			<invisible>MOV</invisible>			
+			<menu name="reglasRegularizacion" type="submenu">
+				<nombreMostrar i18n="true">reglasRegularizacion</nombreMostrar>
+				<overlib i18n="true">reglasRegularizacion</overlib>
+				<url>/servlet/ControlerRegularizacion</url>
+				<tipoVentana>_self</tipoVentana>			
+				<menu name="crearReglaRegularizacion" codOperacion="375">
+					<nombreMostrar i18n="true">crearReglaRegularizacion</nombreMostrar>
+					<overlib i18n="true">crearReglaRegularizacionOver</overlib>
+					<url>/servlet/ControlerRegularizacion?accion=917</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>	
+				<menu name="editarReglaRegularizacion" codOperacion="376">
+					<nombreMostrar i18n="true">editarReglaRegularizacion</nombreMostrar>
+					<overlib i18n="true">editarReglaRegularizacionOver</overlib>
+					<url>/servlet/ControlerRegularizacion?accion=918</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>						
+			</menu>			
+			<menu name="procesosRegularizacion" type="submenu">
+				<nombreMostrar i18n="true">procesosRegularizacion</nombreMostrar>
+				<overlib i18n="true">procesosRegularizacion</overlib>
+				<url>/servlet/ControlerRegularizacion</url>
+				<tipoVentana>_self</tipoVentana>		
+				<menu name="crearProcesoRegularizacion" codOperacion="377">
+					<nombreMostrar i18n="true">crearProcesoRegularizacion</nombreMostrar>
+					<overlib i18n="true">crearProcesoRegularizacionOver</overlib>
+					<url>/servlet/ControlerRegularizacion?accion=924</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>	
+				<menu name="editarProcesoRegularizacion" codOperacion="378">
+					<nombreMostrar i18n="true">editarProcesoRegularizacion</nombreMostrar>
+					<overlib i18n="true">editarProcesoRegularizacionOver</overlib>
+					<url>/servlet/ControlerRegularizacion?accion=925</url>
+					<tipoVentana>_self</tipoVentana>
+					<invisible>MOV</invisible>
+				</menu>					
+			</menu>
+			<menu name="logsRegularizacion" codOperacion="379">
+				<nombreMostrar i18n="true">logsRegularizacion</nombreMostrar>
+				<overlib i18n="true">logsRegularizacionOver</overlib>
+				<url>/servlet/ControlerRegularizacion?accion=931</url>
+				<tipoVentana>_self</tipoVentana>
+				<invisible>MOV</invisible>
+			</menu>				
+		</menu>
+		<!-- Fin H114581 -->
+		
+				
+	</menu>
+	<menu name="enlacesfavoritos">
+		<nombreMostrar i18n="true">enlacesFavoritos</nombreMostrar>
+		<overlib i18n="true">enlacesFavoritosOver</overlib>
+		<url>/servlet/ControlerEnlace?accion=739&amp;origen=enlacesfavoritos</url>
+		<tipoVentana>_self</tipoVentana>
+		<invisible>MOV</invisible>
+	</menu>
+</menus>
